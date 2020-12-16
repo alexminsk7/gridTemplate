@@ -8,7 +8,7 @@
 
 body {
   font-family: Operator Mono Lig, sans-serif;
-  font-size: 10px;
+  font-size: 10px !important;
   line-height: 1.75;
   overflow-x: hidden;
 }
@@ -26,8 +26,23 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
   outline: 1px solid red;
+}
+
+.stage {
+  padding: 7rem 0;
+}
+
+.stage h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #293a43;
+  line-height: 1.2;
+}
+
+.aligner {
+  text-align: center;
 }
 
 .link {
@@ -154,7 +169,7 @@ img {
 
 .portfolio .portfolio__item:hover {
   color: #f0650d;
-  transform: scale(0.98);
+  transform: scale(0.99);
 }
 
 .portfolio .portfolio__item:hover::before {
@@ -188,4 +203,40 @@ img {
 .portfolio .portfolio__item:nth-child(6) {
   grid-column: 4;
   grid-row: 2 / 4;
+}
+
+.portfolio .linkcase {
+  grid-column: 1 / 5;
+  padding: 20px;
+}
+
+.ready {
+  background-color: #ededed;
+}
+
+.ready .container {
+  grid-template-columns: 1fr 1fr;
+}
+
+.ready .container .ready__left {
+  border-right: 1px solid #dadada;
+  padding: 6rem 6rem 6rem;
+}
+
+.ready .container .ready__left h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.ready .container .ready__left h2 + p {
+  margin-bottom: 1rem;
+}
+
+.ready .container .ready__left p {
+  font-size: 1rem;
+}
+
+.ready .container .ready__right {
+  padding-top: 4rem;
+  padding-left: 4rem;
 }
