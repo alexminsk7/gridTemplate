@@ -27,6 +27,23 @@ img {
 	height: auto;
 }
 
+input,
+textarea {
+	border: none;
+	padding: 1.5rem 2rem;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	outline: none;
+	transition: background-color 0.5s;
+	&:focus {
+		background-color: $light;
+	}
+	&::placeholder {
+		color: lighten($dark, 20%);
+	}
+}
+
 .grid {
 	display: grid;
 }
@@ -238,6 +255,28 @@ img {
 		.ready__right {
 			padding-top: 4rem;
 			padding-left: 4rem;
+		}
+	}
+}
+
+// ! FORM SECTION
+.formsection {
+	padding: 3rem 0;
+	background-color: $dark;
+
+	.form {
+		gap: $gutter;
+		grid-template-columns: repeat(4, 1fr);
+		align-items: center;
+
+		input {
+			background-color: lighten($dark, 6%);
+		}
+
+		.form__link {
+			font-size: 1.5rem;
+			// padding: 1rem;
+			width: 100%;
 		}
 	}
 }

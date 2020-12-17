@@ -19,6 +19,27 @@ img {
   height: auto;
 }
 
+input,
+textarea {
+  border: none;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #ededed;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #507182;
+}
+
 .grid {
   display: grid;
 }
@@ -239,4 +260,24 @@ img {
 .ready .container .ready__right {
   padding-top: 4rem;
   padding-left: 4rem;
+}
+
+.formsection {
+  padding: 3rem 0;
+  background-color: #293a43;
+}
+
+.formsection .form {
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.formsection .form input {
+  background-color: #354a56;
+}
+
+.formsection .form .form__link {
+  font-size: 1.5rem;
+  width: 100%;
 }
