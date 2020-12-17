@@ -49,7 +49,6 @@ textarea::placeholder {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 1px solid red;
 }
 
 .stage {
@@ -343,4 +342,29 @@ textarea::placeholder {
 .blog .blog__inner .blog__item .item__content p {
   margin-top: 2rem;
   margin-bottom: 0;
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: #1a242a;
+  color: #4e5355;
+  text-align: center;
+}
+
+.footer .footer__logo {
+  font-size: 2rem;
+  line-height: 1.16;
+}
+
+.footer .footer__logo span {
+  display: block;
+  color: #707476;
+  font-size: 2.3rem;
+}
+
+.footer .footer__copy {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  color: red;
 }

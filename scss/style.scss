@@ -53,7 +53,6 @@ textarea {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 $gutter;
-	outline: 1px solid red;
 }
 
 .stage {
@@ -340,14 +339,31 @@ textarea {
 				}
 			}
 		}
+	}
+}
 
-		// .blog__link {
-		// 	grid-column: 1 / 5;
-		// 	padding: 20px;
-		// }
+// ! FOOTER SECTION
+.footer {
+	padding: 4rem 0;
+	background-color: darken($dark, 8%);
+	color: #4e5355;
+	text-align: center;
+
+	.footer__logo {
+		font-size: 2rem;
+		line-height: 1.16;
+
+		span {
+			display: block;
+			color: #707476;
+			font-size: 2.3rem;
+		}
 	}
 
-	.linkcase {
-		// padding-bottom: 0;
+	.footer__copy {
+		font-size: 1rem;
+		font-weight: bold;
+		padding-top: 2rem;
+		color: red;
 	}
 }
