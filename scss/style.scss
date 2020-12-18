@@ -4,6 +4,7 @@ $dark: #293a43;
 $light: #ededed;
 $gray: #4b5a65;
 $gutter: 20px;
+$globalSize: 10px;
 
 // ! ROOT SETTINGS
 *,
@@ -16,7 +17,7 @@ $gutter: 20px;
 
 body {
 	font-family: Operator Mono Lig, sans-serif;
-	font-size: 10px !important;
+	font-size: $globalSize;
 	line-height: 1.75;
 	color: #333;
 	overflow-x: hidden;
@@ -60,7 +61,7 @@ textarea {
 
 	h2 {
 		font-size: 34px;
-		font-weight: 800;
+		font-weight: bold;
 		color: $dark;
 		line-height: 1.2;
 	}
@@ -253,6 +254,7 @@ textarea {
 		}
 
 		.ready__right {
+			align-self: center;
 			padding-top: 4rem;
 			padding-left: 4rem;
 		}
@@ -274,7 +276,7 @@ textarea {
 		}
 
 		.form__link {
-			font-size: 1.5rem;
+			font-size: 1.45rem;
 			width: 100%;
 		}
 	}
@@ -367,3 +369,6 @@ textarea {
 		color: red;
 	}
 }
+
+// ! MEDIA QUERIES
+@import 'media';
